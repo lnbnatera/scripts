@@ -1,3 +1,5 @@
+#!/bin/bash
+
 yum -y install gcc git
 
 curl https://golang.org/dl/go1.15.3.linux-amd64.tar.gz -o /var/tmp/go1.15.3.linux-amd64.tar.gz
