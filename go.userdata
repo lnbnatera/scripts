@@ -5,6 +5,6 @@ yum -y install gcc git
 wget -O /var/tmp/go1.15.3.linux-amd64.tar.gz https://golang.org/dl/go1.15.3.linux-amd64.tar.gz
 tar zxvf /var/tmp/go1.15.3.linux-amd64.tar.gz -C /usr/local
 
-echo "GOPATH=/home/ec2-user/go" >> /home/ec2-user/.bashrc
-echo "GOBIN=\${GOPATH}/bin" >> /home/ec2-user/.bashrc
+echo "export GOPATH=/home/ec2-user/go" >> /home/ec2-user/.bashrc
+echo "export GOBIN=\${GOPATH}/bin" >> /home/ec2-user/.bashrc
 echo "export PATH=\${PATH}:/usr/local/go/bin:\${GOBIN}" >> /home/ec2-user/.bashrc
